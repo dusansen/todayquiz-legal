@@ -3,38 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Service - TodayQuiz App</title>
+    <title>Terms of Use - Today Quiz</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
-        h1 { color: #2c3e50; }
-        .note { font-style: italic; color: #666; }
+        *, *::before, *::after { box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.7; color: #333; max-width: 760px; margin: 0 auto; padding: 40px 24px 60px; }
+        a { color: #4f7ef7; }
+        h1 { font-size: 2rem; color: #1a1a2e; border-bottom: 2px solid #eee; padding-bottom: 12px; margin-bottom: 4px; }
+        .meta { color: #888; font-size: 0.9rem; margin-bottom: 32px; }
+        h2 { font-size: 1.15rem; color: #1a1a2e; margin-top: 36px; margin-bottom: 8px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 6px; }
+        .contact-box { background: #f4f7ff; padding: 16px 20px; border-left: 4px solid #4f7ef7; border-radius: 0 8px 8px 0; margin: 32px 0 0; }
+        .back { display: inline-block; margin-bottom: 28px; font-size: 0.9rem; color: #4f7ef7; text-decoration: none; }
+        .back:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
-    <h1>Terms of Service</h1>
-    <p class="note">Effective Date: February 27, 2026</p>
+    <a href="index.html" class="back">&#8592; Home</a>
+    <h1>Terms of Use</h1>
+    <p class="meta">Effective Date: March 9, 2026</p>
 
     <h2>1. Acceptance of Terms</h2>
-    <p>By downloading or using the TodayQuiz Application, you agree to these terms. If you do not agree, please do not use the app.</p>
+    <p>By downloading or using the <strong>Today Quiz</strong> app, you agree to these Terms of Use. If you do not agree, please do not use the app.</p>
 
-    <h2>2. Use of Service</h2>
+    <h2>2. License to Use</h2>
+    <p>We grant you a personal, non-exclusive, non-transferable, revocable license to use this app for your own personal, non-commercial entertainment. You may not:</p>
     <ul>
-        <li>You are granted a personal, non-exclusive license to use this app for entertainment.</li>
-        <li>You agree not to attempt to reverse engineer the app or manipulate quiz scores via unauthorized scripts.</li>
+        <li>Reverse engineer, decompile, or disassemble any part of the app.</li>
+        <li>Attempt to manipulate or falsify quiz results through unauthorized means or scripts.</li>
+        <li>Use the app in any way that violates applicable laws or regulations.</li>
     </ul>
 
-    <h2>3. Notifications</h2>
-    <p>By using the app, you consent to receive push notifications regarding new daily quizzes. You may disable these in your system settings at any time.</p>
+    <h2>3. User Accounts &amp; Authentication</h2>
+    <p>The app uses <strong>Firebase Anonymous Authentication</strong>. No account registration is required. A random unique identifier (UID) is automatically assigned to your device session. You are responsible for any activity that occurs under your device. We store only your quiz results associated with this anonymous UID &mdash; no personal information is collected.</p>
 
-    <h2>4. Disclaimer of Warranty</h2>
-    <p>The app is provided "as is." We do not guarantee that the quiz content is 100% accurate at all times or that the service will be uninterrupted.</p>
+    <h2>4. Push Notifications</h2>
+    <p>The app will ask for your permission to send push notifications. If granted, notifications will be used <em>only</em> to alert you when a new daily quiz is ready to play. Notification permission is entirely optional &mdash; you can deny or revoke it at any time in your device settings without losing any app functionality.</p>
 
-    <h2>5. Limitation of Liability</h2>
-    <p>To the maximum extent permitted by law, the developer shall not be liable for any indirect, incidental, or consequential damages arising from your use of the app.</p>
+    <h2>5. Intellectual Property</h2>
+    <p>All quiz content, design, and code within the app are the property of the developer. You may not reproduce or distribute any quiz content without prior written permission.</p>
 
-    <h2>6. Changes to Terms</h2>
-    <p>We reserve the right to update these terms. Continued use of the app constitutes acceptance of the new terms.</p>
+    <h2>6. Disclaimer of Warranty</h2>
+    <p>The app is provided "as is" and "as available" without warranties of any kind. We do not guarantee that quiz content is error-free at all times, or that the service will be uninterrupted.</p>
 
-    <p>Contact: contact@todayquizapp.com</p>
+    <h2>7. Limitation of Liability</h2>
+    <p>To the maximum extent permitted by applicable law, the developer shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of, or inability to use, the app.</p>
+
+    <h2>8. Changes to These Terms</h2>
+    <p>We reserve the right to update these Terms at any time. The "Effective Date" at the top will be updated accordingly. Continued use of the app after changes are posted constitutes your acceptance of the revised Terms.</p>
+
+    <div class="contact-box">
+        <strong>Contact &amp; Support</strong><br>
+        Questions about these Terms? Contact us at:<br>
+        <a href="mailto:contact@todayquizapp.com">contact@todayquizapp.com</a>
+    </div>
 </body>
 </html>
