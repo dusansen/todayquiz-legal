@@ -1,0 +1,29 @@
+# app-ads.txt
+# Replace all placeholder values (in CAPS) with your actual IDs before publishing.
+# Format: <ad system domain>, <publisher ID>, <relationship>, [certification authority ID]
+
+# -------------------------
+# Google AdMob (Mediation)
+# -------------------------
+# Replace PUB-XXXXXXXXXXXXXXXX with your AdMob Publisher ID (e.g. pub-1234567890123456)
+google.com, pub-1147855743329513, DIRECT, f08c47fec0942fa0
+
+# -------------------------
+# Unity Ads
+# -------------------------
+# Replace YOUR_UNITY_GAME_ID with your Unity Game ID
+unity.com, f537968e-16de-4fc0-8703-fe7733a54425, DIRECT, 96cabb5fbdde37a7
+unityads.unity3d.com, f537968e-16de-4fc0-8703-fe7733a54425, DIRECT, 96cabb5fbdde37a7
+
+# -------------------------
+# Meta Audience Network
+# -------------------------
+# Replace YOUR_META_APP_ID with your Facebook/Meta App ID
+facebook.com, 1771364150504891, DIRECT
+audiencenetwork.com, 1771364150504891, DIRECT
+
+# -------------------------
+# AppLovin
+# -------------------------
+# Replace YOUR_APPLOVIN_SDK_KEY with your AppLovin SDK Key
+applovin.com, YOUR_APPLOVIN_SDK_KEY, DIRECT, 1a4e959a1b50034a
