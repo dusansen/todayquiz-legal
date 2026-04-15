@@ -16,6 +16,8 @@
         .contact-box { background: #f4f7ff; padding: 16px 20px; border-left: 4px solid #4f7ef7; border-radius: 0 8px 8px 0; margin: 32px 0 0; }
         .back { display: inline-block; margin-bottom: 28px; font-size: 0.9rem; color: #4f7ef7; text-decoration: none; }
         .back:hover { text-decoration: underline; }
+        .version-notice { background: #fff8e1; border-left: 4px solid #f6b93b; border-radius: 0 8px 8px 0; padding: 10px 16px; font-size: 0.9rem; margin-bottom: 16px; }
+        .version-notice a { color: #4f7ef7; }
         .lang-switch { display: flex; gap: 8px; margin-bottom: 24px; font-size: 0.88rem; }
         .lang-switch a { color: #4f7ef7; text-decoration: none; padding: 4px 12px; border-radius: 20px; border: 1px solid #d0daff; }
         .lang-switch a:hover { background: #eef2ff; }
@@ -24,11 +26,12 @@
     </style>
 </head>
 <body>
-    <a href="../index.html" class="back">&#8592; Početna</a>
+    <a href="../../../index.html" class="back">&#8592; Početna</a>
+    <div class="version-notice">Pregledate verziju 1.0.3 ovih uslova korišćenja. <a href="../../../sr/terms.html">Pogledajte najnoviju verziju &rarr;</a></div>
     <div class="lang-switch">
-        <a href="../terms.html">EN</a>
-        <a href="../hr/terms.html">HR</a>
-        <a href="terms.html" class="active">SR</a>
+        <a href="../index.html">EN</a>
+        <a href="../hr/index.html">HR</a>
+        <a href="index.html" class="active">SR</a>
     </div>
     <h1>Uslovi korišćenja</h1>
     <p class="meta">Datum stupanja na snagu: 15. aprila 2026. &mdash; Verzija 1.0.3</p>
@@ -45,21 +48,11 @@
     </ul>
 
     <h2>3. Korisnički nalozi i autentifikacija</h2>
-    <p>Aplikacija podržava sledeće načine prijave:</p>
-    <ul>
-        <li><strong>Anonimno:</strong> Registracija naloga nije potrebna. Vašoj sesiji na uređaju automatski se dodeljuje nasumični jedinstveni identifikator (UID). Odgovorni ste za sve aktivnosti koje se odvijaju na vašem uređaju.</li>
-        <li><strong>Prijava putem Apple-a ili Google-a:</strong> Možete se prijaviti putem vašeg Apple ID-a ili Google naloga kroz Firebase autentifikaciju. Na taj način nas ovlašćujete da primamo i čuvamo vašu adresu e-pošte i ime za prikaz koje pruži odabrani pružalac usluge prijave.</li>
-    </ul>
-    <p><strong>Korisničko ime.</strong> Prilikom kreiranja autentifikovanog naloga, morate izabrati korisničko ime. Vaše korisničko ime javno je vidljivo na rang-listama i unutar svih grupa kojima se pridružite ili koje kreirate. Izborom korisničkog imena slažete se da ono:</p>
-    <ul>
-        <li>Neće lažno predstavljati drugu osobu, brend ili entitet.</li>
-        <li>Neće sadržati uvredljiv, mrzilački ili seksualno eksplicitan jezik.</li>
-        <li>Neće kršiti važeće zakone ili prava trećih strana.</li>
-    </ul>
-    <p>Zadržavamo pravo uklanjanja ili promene korisničkog imena koje krši ove zahteve bez prethodnog obaveštenja.</p>
+    <p>Aplikacija podržava anonimno i autentifikovano korišćenje. <strong>Firebase anonimna autentifikacija</strong> vašoj sesiji na uređaju dodeljuje nasumični jedinstveni identifikator (UID) bez potrebe za registracijom. Odgovorni ste za sve aktivnosti koje se odvijaju na vašem uređaju.</p>
+    <p>Opcionalno se možete prijaviti putem <strong>Sign in with Apple</strong> ili <strong>Google Sign-In</strong>. Nakon prijave, birate korisničko ime i možete se takmičiti na rang-listama i pridruživati se grupama.</p>
 
     <h2>4. Brisanje naloga</h2>
-    <p>Ako ste kreirali autentifikovani nalog, imate pravo da ga obrišete u bilo kom trenutku. Brisanje naloga je trajno — jednom potvrđeno, vaš nalog i svi povezani podaci ne mogu se povratiti.</p>
+    <p>Ako ste kreirali autentifikovani nalog, imate pravo da ga obrišete u bilo kom trenutku. Brisanje naloga je trajno — kada potvrdite, vaš nalog i svi povezani podaci ne mogu se povratiti.</p>
     <p><strong>Kako obrisati nalog:</strong></p>
     <div class="deletion-box">
         <ol>
@@ -70,31 +63,17 @@
     </div>
     <p>Brisanjem naloga trajno se uklanjaju sledeći podaci iz naših sistema:</p>
     <ul>
-        <li>Vaša e-mail adresa i prikazno ime</li>
+        <li>Vaša adresa e-pošte i ime za prikaz</li>
         <li>Vaše korisničko ime</li>
-        <li>Svi vaši rezultati kvizova i bodovi</li>
+        <li>Svi vaši rezultati kviza i bodovi</li>
         <li>Vaša članstva u grupama</li>
     </ul>
-    <p>Brisanje ćemo završiti u roku od 30 dana od vašeg zahteva. Ako naiđete na poteškoće pri brisanju putem aplikacije, kontaktirajte nas na <a href="mailto:contact@todayquizapp.com">contact@todayquizapp.com</a>.</p>
+    <p>Brisanje ćemo dovršiti u roku od 30 dana od vašeg zahteva. Ako imate poteškoće sa korišćenjem brisanja unutar aplikacije, kontaktirajte nas na <a href="mailto:contact@todayquizapp.com">contact@todayquizapp.com</a>.</p>
 
-    <h2>5. Rang-liste</h2>
-    <p>Aplikacija sadrži <strong>globalnu rang-listu</strong> sa prikazom top 1.000 rezultata kviza svih korisnika. Vaše korisničko ime i rezultat mogu se pojaviti na ovoj listi i biće vidljivi svim korisnicima aplikacije. Pored toga, <strong>grupne rang-liste</strong> prikazuju rezultate svih članova unutar svake grupe kojoj pripadate, vidljive svim članovima te grupe.</p>
-    <p>Korišćenjem aplikacije potvrđujete i prihvatate da vaše korisničko ime i rezultati kviza mogu biti javno prikazani na ovim rang-listama. Nije dozvoljeno koristiti rang-liste za uznemiravanje, lažno predstavljanje ili ciljanje drugih korisnika.</p>
-
-    <h2>6. Grupe</h2>
-    <p>Autentifikovani korisnici mogu kreirati grupe i pozivati druge da im se pridruže radi takmičenja na zajedničkoj rang-listi. Učestvovanjem u grupama:</p>
-    <ul>
-        <li>Vaše korisničko ime i rezultati vidljivi su svim članovima grupe.</li>
-        <li>Kreatori grupe odgovorni su za grupe koje kreiraju i pozivnice koje šalju.</li>
-        <li>Nije dozvoljeno koristiti grupe za uznemiravanje, slanje neželjene pošte ili ciljanje drugih korisnika.</li>
-        <li>Nazivi grupa moraju ispunjavati iste standarde ponašanja kao i korisnička imena (pogledajte Odeljak 3).</li>
-    </ul>
-    <p>Zadržavamo pravo uklanjanja bilo koje grupe ili opoziva pristupa grupi koja krši ove Uslove.</p>
-
-    <h2>7. Push obaveštenja</h2>
+    <h2>5. Push obaveštenja</h2>
     <p>Aplikacija će zatražiti vašu dozvolu za slanje push obaveštenja. Ako odobrite, obaveštenja će se koristiti <em>isključivo</em> da vas upozore kada je novi dnevni kviz spreman. Dozvola za obaveštenja je potpuno opcionalna &mdash; možete je odbiti ili opozvati u bilo kom trenutku u podešavanjima uređaja bez gubitka funkcionalnosti aplikacije.</p>
 
-    <h2>8. Oglašavanje</h2>
+    <h2>6. Oglašavanje</h2>
     <p>Aplikacija je besplatna i podržana je oglasima. Oglasi se poslužuju putem <strong>Google AdMob-a</strong>, koji koristi sledeće partnere za posredovanje:</p>
     <ul>
         <li><strong>AppLovin</strong> (AppLovin Corporation)</li>
@@ -103,16 +82,16 @@
     </ul>
     <p>Korišćenjem aplikacije prihvatate prikazivanje oglasa. Prikazani oglasi mogu biti personalizovani na osnovu identifikatora oglašavanja vašeg uređaja. Možete isključiti personalizovane oglase kroz podešavanja uređaja (iOS: <em>Podešavanja &rarr; Privatnost i bezbednost &rarr; Praćenje</em>; Android: <em>Podešavanja &rarr; Google &rarr; Oglasi</em>). Nije dozvoljeno koristiti bilo koji mehanizam za blokiranje, ometanje ili zaobilaženje prikazivanja oglasa unutar aplikacije.</p>
 
-    <h2>9. Intelektualna svojina</h2>
+    <h2>7. Intelektualna svojina</h2>
     <p>Sav sadržaj kvizova, dizajn i kod unutar aplikacije vlasništvo su programera. Nije dozvoljeno reprodukovati ili distribuirati bilo koji sadržaj kviza bez prethodnog pisanog odobrenja.</p>
 
-    <h2>10. Odricanje od garancija</h2>
+    <h2>8. Odricanje od garancija</h2>
     <p>Aplikacija se pruža "kakva jeste" i "kako je dostupna" bez ikakvih garancija. Ne garantujemo da sadržaj kvizova uvek neće sadržati greške niti da usluga neće biti prekinuta.</p>
 
-    <h2>11. Ograničenje odgovornosti</h2>
+    <h2>9. Ograničenje odgovornosti</h2>
     <p>U maksimalnoj meri dozvoljenoj važećim zakonom, programer neće biti odgovoran za bilo kakvu posrednu, slučajnu, posebnu ili posledičnu štetu nastalu kao rezultat vašeg korišćenja, ili nemogućnosti korišćenja, aplikacije.</p>
 
-    <h2>12. Izmene ovih uslova</h2>
+    <h2>10. Izmene ovih uslova</h2>
     <p>Zadržavamo pravo ažuriranja ovih Uslova u bilo kom trenutku. Datum "Datum stupanja na snagu" na vrhu biće ažuriran u skladu s tim. Nastavak korišćenja aplikacije nakon objave izmena predstavlja prihvatanje revidiranih Uslova.</p>
 
     <div class="contact-box">

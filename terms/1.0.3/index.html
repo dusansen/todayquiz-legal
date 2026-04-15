@@ -16,6 +16,8 @@
         .contact-box { background: #f4f7ff; padding: 16px 20px; border-left: 4px solid #4f7ef7; border-radius: 0 8px 8px 0; margin: 32px 0 0; }
         .back { display: inline-block; margin-bottom: 28px; font-size: 0.9rem; color: #4f7ef7; text-decoration: none; }
         .back:hover { text-decoration: underline; }
+        .version-notice { background: #fff8e1; border-left: 4px solid #f6b93b; border-radius: 0 8px 8px 0; padding: 10px 16px; font-size: 0.9rem; margin-bottom: 24px; }
+        .version-notice a { color: #4f7ef7; }
         .lang-switch { display: flex; gap: 8px; margin-bottom: 24px; font-size: 0.88rem; }
         .lang-switch a { color: #4f7ef7; text-decoration: none; padding: 4px 12px; border-radius: 20px; border: 1px solid #d0daff; }
         .lang-switch a:hover { background: #eef2ff; }
@@ -24,11 +26,12 @@
     </style>
 </head>
 <body>
-    <a href="index.html" class="back">&#8592; Home</a>
+    <a href="../../index.html" class="back">&#8592; Home</a>
+    <div class="version-notice">You are viewing version 1.0.3 of these terms. <a href="../../terms.html">View the latest version &rarr;</a></div>
     <div class="lang-switch">
-        <a href="terms.html" class="active">EN</a>
-        <a href="hr/terms.html">HR</a>
-        <a href="sr/terms.html">SR</a>
+        <a href="index.html" class="active">EN</a>
+        <a href="hr/index.html">HR</a>
+        <a href="sr/index.html">SR</a>
     </div>
     <h1>Terms of Use</h1>
     <p class="meta">Effective Date: April 15, 2026 &mdash; Version 1.0.3</p>
@@ -45,18 +48,8 @@
     </ul>
 
     <h2>3. User Accounts &amp; Authentication</h2>
-    <p>The app supports the following sign-in options:</p>
-    <ul>
-        <li><strong>Anonymous:</strong> No registration required. A random unique identifier (UID) is automatically assigned to your device. You are responsible for any activity that occurs under your device.</li>
-        <li><strong>Sign in with Apple or Google:</strong> You may sign in using your Apple ID or Google account via Firebase Authentication. By doing so, you authorize us to receive and store your email address and display name as provided by the chosen sign-in provider.</li>
-    </ul>
-    <p><strong>Username.</strong> When creating an authenticated account, you must choose a username. Your username is publicly visible on leaderboards and within all groups you join or create. By choosing a username, you agree that it will:</p>
-    <ul>
-        <li>Not impersonate another person, brand, or entity.</li>
-        <li>Not contain offensive, hateful, or sexually explicit language.</li>
-        <li>Not violate any applicable law or third-party right.</li>
-    </ul>
-    <p>We reserve the right to remove or change a username that violates these requirements without prior notice.</p>
+    <p>The app supports both anonymous and authenticated use. <strong>Firebase Anonymous Authentication</strong> assigns a random unique identifier (UID) to your device session with no registration required. You are responsible for any activity that occurs under your device.</p>
+    <p>You may optionally sign in using <strong>Sign in with Apple</strong> or <strong>Google Sign-In</strong>. When signed in, you choose a username and may compete on leaderboards and join groups.</p>
 
     <h2>4. Account Deletion</h2>
     <p>If you have created an authenticated account, you have the right to delete it at any time. Account deletion is permanent — once confirmed, your account and all associated data cannot be recovered.</p>
@@ -77,24 +70,10 @@
     </ul>
     <p>We will complete the deletion within 30 days of your request. If you encounter any difficulty using the in-app deletion, contact us at <a href="mailto:contact@todayquizapp.com">contact@todayquizapp.com</a>.</p>
 
-    <h2>5. Leaderboards</h2>
-    <p>The app features a <strong>global leaderboard</strong> displaying the top 1,000 quiz scores across all users. Your username and score may appear on this list and will be visible to all users of the app. Additionally, <strong>group leaderboards</strong> display the scores of all members within each group you belong to, visible to all members of that group.</p>
-    <p>By using the app, you acknowledge and agree that your username and quiz scores may be displayed publicly on these leaderboards. You may not use the leaderboard to harass, impersonate, or target other users.</p>
-
-    <h2>6. Groups</h2>
-    <p>Authenticated users may create groups and invite others to join in order to compete on a shared leaderboard. When participating in groups:</p>
-    <ul>
-        <li>Your username and scores are visible to all members of the group.</li>
-        <li>Group creators are responsible for the groups they create and the invitations they send.</li>
-        <li>You may not use groups to harass, spam, or target other users.</li>
-        <li>Group names must adhere to the same conduct standards as usernames (see Section 3).</li>
-    </ul>
-    <p>We reserve the right to remove any group or revoke group access that violates these Terms.</p>
-
-    <h2>7. Push Notifications</h2>
+    <h2>5. Push Notifications</h2>
     <p>The app will ask for your permission to send push notifications. If granted, notifications will be used <em>only</em> to alert you when a new daily quiz is ready to play. Notification permission is entirely optional &mdash; you can deny or revoke it at any time in your device settings without losing any app functionality.</p>
 
-    <h2>8. Advertising</h2>
+    <h2>6. Advertising</h2>
     <p>The app is free to use and is supported by advertising. Advertisements are served through <strong>Google AdMob</strong>, which uses the following mediation partners:</p>
     <ul>
         <li><strong>AppLovin</strong> (AppLovin Corporation)</li>
@@ -103,16 +82,16 @@
     </ul>
     <p>By using the app, you agree to the display of advertisements. Ads served may be personalized based on your device's advertising identifier. You may opt out of personalized advertising through your device settings (iOS: <em>Settings &rarr; Privacy &amp; Security &rarr; Tracking</em>; Android: <em>Settings &rarr; Google &rarr; Ads</em>). You may not use any mechanism to block, interfere with, or circumvent the display of advertisements within the app.</p>
 
-    <h2>9. Intellectual Property</h2>
+    <h2>7. Intellectual Property</h2>
     <p>All quiz content, design, and code within the app are the property of the developer. You may not reproduce or distribute any quiz content without prior written permission.</p>
 
-    <h2>10. Disclaimer of Warranty</h2>
+    <h2>8. Disclaimer of Warranty</h2>
     <p>The app is provided "as is" and "as available" without warranties of any kind. We do not guarantee that quiz content is error-free at all times, or that the service will be uninterrupted.</p>
 
-    <h2>11. Limitation of Liability</h2>
+    <h2>9. Limitation of Liability</h2>
     <p>To the maximum extent permitted by applicable law, the developer shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of, or inability to use, the app.</p>
 
-    <h2>12. Changes to These Terms</h2>
+    <h2>10. Changes to These Terms</h2>
     <p>We reserve the right to update these Terms at any time. The "Effective Date" at the top will be updated accordingly. Continued use of the app after changes are posted constitutes your acceptance of the revised Terms.</p>
 
     <div class="contact-box">
