@@ -23,9 +23,9 @@ unityads.unity3d.com, 6071017, DIRECT, 4016757
 # -------------------------
 # Meta Audience Network
 # -------------------------
-# Replace YOUR_META_APP_ID with your Facebook/Meta App ID
-facebook.com, 1771364150504891, DIRECT, c3e20eee3f780d68
-audiencenetwork.com, 1771364150504891, DIRECT, 292ba6274482705
+# Meta app id. Format and RESELLER exactly as Meta specifies at
+# developers.facebook.com/docs/audience-network/optimization/best-practices/authorized-sellers-app-ads
+facebook.com, 1771364150504891, RESELLER, c3e20eee3f780d68
 
 # -------------------------
 # AppLovin
