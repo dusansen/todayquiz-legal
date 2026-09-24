@@ -20,7 +20,12 @@
             text-align: center;
             padding: 52px 24px 44px;
         }
-        header h1 { margin: 0 0 8px; font-size: 2.2rem; letter-spacing: -0.5px; }
+        header h1 { margin: 0 0 8px; font-size: 2.2rem; letter-spacing: -0.5px; line-height: 1.2; display: inline-flex; align-items: center; gap: 16px; text-align: left; }
+        header h1 .app-icon { width: 64px; height: 64px; border-radius: 22%; flex-shrink: 0; }
+        @media (max-width: 480px) {
+            header h1 { font-size: 1.7rem; gap: 12px; }
+            header h1 .app-icon { width: 48px; height: 48px; }
+        }
         header p { margin: 0; color: #aab4d4; font-size: 1rem; }
         main { max-width: 680px; margin: 0 auto; padding: 48px 24px 64px; }
 
@@ -110,7 +115,7 @@
 </head>
 <body>
     <header>
-        <h1>Today Quiz: Daily Brain Trivia</h1>
+        <h1><img src="public/icons/app-icon.png" alt="" class="app-icon">Today Quiz: Daily Brain Trivia</h1>
         <p>Legal &amp; Support</p>
     </header>
 
@@ -153,22 +158,29 @@
 
         <section class="contact-section">
             <h2>Contact Us</h2>
-            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <form id="contact-form">
                 <div class="field">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Your name" required>
-                </div>
-                <div class="field">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
                 </div>
                 <div class="field">
                     <label for="message">Message</label>
                     <textarea id="message" name="message" placeholder="Your question or support request..." required></textarea>
                 </div>
                 <button type="submit">Send Message</button>
-                <p class="form-note">Or email us directly at <a href="mailto:contact@todayquizapp.com">contact@todayquizapp.com</a></p>
+                <p class="form-note">This opens your email app with your message ready to send. Or email us directly at <a href="mailto:contact@todayquizapp.com">contact@todayquizapp.com</a></p>
             </form>
+            <script>
+                document.getElementById('contact-form').addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    var name = document.getElementById('name').value.trim();
+                    var message = document.getElementById('message').value.trim();
+                    var subject = 'Today Quiz support request from ' + name;
+                    window.location.href = 'mailto:contact@todayquizapp.com'
+                        + '?subject=' + encodeURIComponent(subject)
+                        + '&body=' + encodeURIComponent(message + '\n\n' + name);
+                });
+            </script>
         </section>
     </main>
 
