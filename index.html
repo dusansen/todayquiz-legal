@@ -48,47 +48,24 @@
         .link-card strong { display: block; font-size: 1.05rem; margin-bottom: 4px; }
         .link-card span { color: #777; font-size: 0.88rem; }
 
-        /* Contact form */
+        /* Contact */
         .contact-section h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.08em; color: #888; margin-bottom: 16px; }
-        form {
+        .contact-card {
             background: #fff;
             border: 1px solid #e8eaf0;
             border-radius: 12px;
-            padding: 28px 24px 24px;
+            padding: 24px;
         }
-        .field { margin-bottom: 18px; }
-        label { display: block; font-size: 0.88rem; font-weight: 600; color: #555; margin-bottom: 6px; }
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: 100%;
-            padding: 10px 14px;
-            border: 1px solid #d9dce8;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            font-family: inherit;
-            color: #333;
-            background: #fafbff;
-            transition: border-color 0.15s;
-            outline: none;
-        }
-        input[type="text"]:focus,
-        input[type="email"]:focus,
-        textarea:focus { border-color: #4f7ef7; background: #fff; }
-        textarea { resize: vertical; min-height: 130px; }
-        button[type="submit"] {
-            background: #4f7ef7;
-            color: #fff;
-            border: none;
-            border-radius: 8px;
-            padding: 12px 28px;
-            font-size: 0.95rem;
+        .contact-card p { margin: 0 0 12px; }
+        .contact-card .contact-email {
+            display: inline-block;
+            font-size: 1.15rem;
             font-weight: 600;
-            cursor: pointer;
-            transition: background 0.15s;
+            color: #4f7ef7;
+            text-decoration: none;
+            word-break: break-all;
         }
-        button[type="submit"]:hover { background: #3a65d8; }
-        .form-note { font-size: 0.82rem; color: #999; margin-top: 12px; }
+        .contact-card .contact-email:hover { text-decoration: underline; }
 
         footer { text-align: center; color: #bbb; font-size: 0.82rem; padding: 24px; }
 
@@ -158,29 +135,10 @@
 
         <section class="contact-section">
             <h2>Contact Us</h2>
-            <form id="contact-form">
-                <div class="field">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your name" required>
-                </div>
-                <div class="field">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Your question or support request..." required></textarea>
-                </div>
-                <button type="submit">Send Message</button>
-                <p class="form-note">This opens your email app with your message ready to send. Or email us directly at <a href="mailto:contact@todayquizapp.com">contact@todayquizapp.com</a></p>
-            </form>
-            <script>
-                document.getElementById('contact-form').addEventListener('submit', function (e) {
-                    e.preventDefault();
-                    var name = document.getElementById('name').value.trim();
-                    var message = document.getElementById('message').value.trim();
-                    var subject = 'Today Quiz support request from ' + name;
-                    window.location.href = 'mailto:contact@todayquizapp.com'
-                        + '?subject=' + encodeURIComponent(subject)
-                        + '&body=' + encodeURIComponent(message + '\n\n' + name);
-                });
-            </script>
+            <div class="contact-card">
+                <p>For questions, support or feedback, send an email to:</p>
+                <a href="mailto:contact@todayquizapp.com" class="contact-email">contact@todayquizapp.com</a>
+            </div>
         </section>
     </main>
 
